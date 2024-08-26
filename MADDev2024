@@ -1,0 +1,23 @@
+import java.util.*;
+fun main() {
+  /*println("Hello world!")
+
+  var names: List<String> = listOf<String>("Ashton", "Ward")
+  var nums: MutableList<Double> = mutableListOf<Double>()
+ nums.add(4.0)
+ nums.add(3.9)
+
+ println(nums)*/
+  var rand = Random()
+  var randomValues = List(1000) { rand.nextInt(100) }
+
+  var sum: Double = 0.0
+    for (values in randomValues){
+      sum += randomValues[values]
+    } 
+
+    sum = sum / 1000
+
+    print(sum)
+
+  }
